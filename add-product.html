@@ -26,7 +26,7 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App: Blog App</title>
+    <title>App: E-Commerce App</title>
   </head>
 
   <body>
@@ -37,14 +37,15 @@
             <caption
               style="font-size: 25px; margin-bottom: 10px; text-transform: uppercase;"
             >
-              ALL Posts
+              ALL Products
             </caption>
             <thead>
               <tr>
                 <th>Image</th>
-                <th>Title</th>
+                <th>Name</th>
                 <th>Description</th>
                 <th>Category</th>
+                <th>Price</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -68,6 +69,9 @@
                 <td>
                   Game
                 </td>
+                <td>
+                  $120.00
+                </td>
                 <td style="width: 150px;">
                   <a class="waves-effect waves-light btn">
                     <i class="material-icons">edit</i></a
@@ -78,33 +82,36 @@
                 </td>
               </tr>
               <tr>
-                  <td>
-                    <img
-                      src="img/yuna.jpg"
-                      width="50"
-                      alt=""
-                      class="circle responsive-img"
-                    />
-                  </td>
-                  <td>
-                    Lorem ipsum dolor sit amet.
-                  </td>
-                  <td>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nostrum unde ipsa, quaerat minima adipisci ab!
-                  </td>
-                  <td>
-                    Game
-                  </td>
-                  <td style="width: 150px;">
-                    <a class="waves-effect waves-light btn">
-                      <i class="material-icons">edit</i></a
-                    >
-                    <a class="waves-effect waves-light btn red">
-                      <i class="material-icons">delete_forever</i></a
-                    >
-                  </td>
-                </tr>
+                <td>
+                  <img
+                    src="img/yuna.jpg"
+                    width="50"
+                    alt=""
+                    class="circle responsive-img"
+                  />
+                </td>
+                <td>
+                  Lorem ipsum dolor sit amet.
+                </td>
+                <td>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nostrum unde ipsa, quaerat minima adipisci ab!
+                </td>
+                <td>
+                  Game
+                </td>
+                <td>
+                  $120.00
+                </td>
+                <td style="width: 150px;">
+                  <a class="waves-effect waves-light btn">
+                    <i class="material-icons">edit</i></a
+                  >
+                  <a class="waves-effect waves-light btn red">
+                    <i class="material-icons">delete_forever</i></a
+                  >
+                </td>
+              </tr>
             </tbody>
             <tfoot>
               <tr>
@@ -126,35 +133,42 @@
     <div id="myModal2" class="modal myModal2">
       <div class="modal-content">
         <div class="row">
-          <h4 class="col s12">Add Post</h4>
+          <h4 class="col s12">Add Product</h4>
           <form class="col s12">
             <div class="row">
               <div class="input-field col s12">
-                  <select>
-                      <option value="" disabled selected>Select a category</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </select>
+                <select>
+                  <option value="" disabled selected>Select a category</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
                 <label>Select Category</label>
               </div>
               <div class="input-field col s12">
-                  <input id="post_title" type="text" class="validate" />
-                  <label for="post_title">Enter post title</label>
+                <input id="name" type="text" class="validate" />
+                <label for="name">Enter product name</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea
+                  id="textarea1"
+                  class="materialize-textarea"
+                ></textarea>
+                <label for="textarea1">Enter product description</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="price" type="number" class="validate" />
+                <label for="price">Enter product price</label>
+              </div>
+              <div class="file-field input-field col s12">
+                <div class="btn">
+                  <span>Image</span>
+                  <input type="file" />
                 </div>
-                <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Enter post description</label>
-                  </div>
-                  <div class="file-field input-field col s12">
-                      <div class="btn">
-                        <span>Image</span>
-                        <input type="file">
-                      </div>
-                      <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text">
-                      </div>
-                    </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text" />
+                </div>
+              </div>
             </div>
           </form>
         </div>

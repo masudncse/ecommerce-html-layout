@@ -26,7 +26,7 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App: Blog App</title>
+    <title>App: E-Commerce App</title>
   </head>
 
   <body>
@@ -40,12 +40,17 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
-              <a href="#" class="brand-logo center">MY BLOG WEBSITE</a>
+              <a href="#" class="brand-logo center">E-COMMERCE WEBSITE</a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li>
+                    <a href="checkout.html"><i class="material-icons left">shopping_cart</i><span class="badge white" style="color: #000;">04</span></a>
+                  </li>
                 <li>
                   <a href="add-category.html" target="_blank">Add Category</a>
                 </li>
-                <li><a href="add-post.html" target="_blank">Add Post</a></li>
+                <li>
+                  <a href="add-product.html" target="_blank">Add Product</a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -56,20 +61,36 @@
             <tbody>
               <tr>
                 <td class="center">
-                  <img
-                    src="img/yuna.jpg"
-                    alt=""
-                    class="responsive-img"
-                  />
-                  
-                    <h5 style="margin-bottom: 0;">
-                      Lorem ipsum dolor sit amet.
-                    </h5>
-                    
+                  <img src="img/yuna.jpg" alt="" class="responsive-img" />
+
+                  <h5 style="margin-bottom: 0;">
+                    Lorem ipsum dolor sit amet.
+                  </h5>
                   <p style="margin-top: 0;">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Nostrum unde ipsa, quaerat minima adipisci ab!
                   </p>
+                  <div
+                    style="display: flex; align-items: center; justify-content: center;"
+                  >
+                    <div style="margin-right: 25px;">
+                      <h4
+                        style="margin-top: 2px;margin-bottom: 2px; color: #e53935;"
+                      >
+                        $120.00
+                      </h4>
+                    </div>
+                    <div>
+                      <a
+                        href="//"
+                        class="waves-effect waves-light btn red"
+                        class=""
+                      >
+                        <i class="material-icons left">add_shopping_cart</i>Add
+                        Cart
+                      </a>
+                    </div>
+                  </div>
                   <p>Category: <a href="">Game</a> | Published: 23 Oct, 2019</p>
                 </td>
               </tr>
@@ -77,64 +98,88 @@
           </table>
 
           <table class="striped homeTable" style="margin-top: 100px;">
-              <caption
+            <caption
               style="font-size: 25px; margin-bottom: 15px; text-transform: uppercase;"
             >
               Suggestion Posts
             </caption>
-              <tbody>
-                <tr>
-                  <td>
-                    <img
-                      src="img/yuna.jpg"
-                      width="100"
-                      alt=""
-                      class="circle responsive-img"
-                    />
-                  </td>
-                  <td>
-                    <a href="">
-                      <h5 style="margin-bottom: 0;">
-                        Lorem ipsum dolor sit amet.
-                      </h5>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="img/yuna.jpg"
+                    width="100"
+                    alt=""
+                    class="circle responsive-img"
+                  />
+                </td>
+                <td>
+                  <a href="">
+                    <h5 style="margin-bottom: 0;">
+                      Lorem ipsum dolor sit amet.
+                    </h5>
+                  </a>
+                  <p style="margin-top: 0;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nostrum unde ipsa, quaerat minima adipisci ab!
+                  </p>
+                  <h4
+                    style="margin-top: 2px;margin-bottom: 2px; color: #e53935;"
+                  >
+                    $120.00
+                  </h4>
+                  <p>
+                    Category: <a href="">Game</a> | Published: 23 Oct, 2019
+                    <a
+                      href="//"
+                      class="waves-effect waves-light btn red right"
+                      class="right"
+                    >
+                      <i class="material-icons left">add_shopping_cart</i>Add
+                      Cart
                     </a>
-                    <p style="margin-top: 0;">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Nostrum unde ipsa, quaerat minima adipisci ab!
-                    </p>
-                    <p>
-                      Category: <a href="">Game</a> | Published: 23 Oct, 2019
-                      <a href="" class="right">READ MORE</a>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                    <td>
-                      <img
-                        src="img/yuna.jpg"
-                        width="100"
-                        alt=""
-                        class="circle responsive-img"
-                      />
-                    </td>
-                    <td>
-                      <a href="">
-                        <h5 style="margin-bottom: 0;">
-                          Lorem ipsum dolor sit amet.
-                        </h5>
-                      </a>
-                      <p style="margin-top: 0;">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Nostrum unde ipsa, quaerat minima adipisci ab!
-                      </p>
-                      <p>
-                        Category: <a href="">Game</a> | Published: 23 Oct, 2019
-                        <a href="" class="right">READ MORE</a>
-                      </p>
-                    </td>
-                  </tr>
-              </tbody>
-            </table>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="img/yuna.jpg"
+                    width="100"
+                    alt=""
+                    class="circle responsive-img"
+                  />
+                </td>
+                <td>
+                  <a href="">
+                    <h5 style="margin-bottom: 0;">
+                      Lorem ipsum dolor sit amet.
+                    </h5>
+                  </a>
+                  <p style="margin-top: 0;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nostrum unde ipsa, quaerat minima adipisci ab!
+                  </p>
+                  <h4
+                    style="margin-top: 2px;margin-bottom: 2px; color: #e53935;"
+                  >
+                    $120.00
+                  </h4>
+                  <p>
+                    Category: <a href="">Game</a> | Published: 23 Oct, 2019
+                    <a
+                      href="//"
+                      class="waves-effect waves-light btn red right"
+                      class="right"
+                    >
+                      <i class="material-icons left">add_shopping_cart</i>Add
+                      Cart
+                    </a>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div class="col s3">
